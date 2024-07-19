@@ -17,3 +17,12 @@ Download tar file from https://drive.google.com/drive/folders/1BsSmDIBcSMG6hxnN9
 1. Run the backend server.
 2. Run the frontend server.
 3. Open the browser and navigate to `http://localhost:3000`.
+
+
+## API Endpoints
+- `/login`: Login API
+- `/register`: Register API
+- `/profile`: Profile API
+- `/api/stores`: Store API
+- `/api/products`: Product API
+- `/api/create-order`: Order API
