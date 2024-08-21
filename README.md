@@ -29,8 +29,6 @@ This endpoint allows the retrieval and updating of a user’s profile, including
 
 - **Route**: `/profile`
 - **HTTP Methods**: `GET`, `PUT`
-- **Authentication**: JWT token required.
-- **Authorization**: User must be the owner of the profile to make updates.
 
   - `GET`: Retrieve profile and associated store details.
   - `PUT`: Update user profile and store details.
@@ -40,8 +38,6 @@ Endpoints to handle CRUD operations for products within a store.
 
 - **Route**: `/products`
 - **HTTP Methods**: `POST`, `GET`, `PUT`, `DELETE`
-- **Authentication**: JWT token required.
-- **Authorization**: User must be the owner of the store to manage products.
 
   - `POST`: Create a new product in the store.
   - `GET`: Retrieve a list of products in the store.
@@ -53,8 +49,6 @@ Endpoints to handle the placing and management of orders.
 
 - **Route**: `/order`
 - **HTTP Methods**: `POST`, `GET`
-- **Authentication**: JWT token required.
-- **Authorization**: User must be authenticated to place or view orders.
 
   - `POST`: Place a new order.
   - `GET`: Retrieve the status and details of an existing order.
@@ -72,7 +66,6 @@ The JrPreneur Backend API is implemented as a Flask-based web service, utilizing
 - SQLAlchemy
 - Flask-Migrate
 - Flask-CORS
-- Flask-JWT-Extended
 
 ## Docker
 The application is containerized using Docker. Below are the instructions to build and run the service.
